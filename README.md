@@ -31,3 +31,26 @@ Now, we can give our new user access to administer our new database:
 
 Exit by typing:
 >```\q```
+
+Create a virtual environment for the project:
+>```sudo -H pip3 install --upgrade pip```
+>```sudo -H pip3 install virtualenv```
+
+With virtualenv installed, we can start forming our project. Create and move into a directory where we can keep our project files:
+>```mkdir ~/myproject```
+>```cd ~/myproject```
+
+Within the project directory, create a Python virtual environment by typing:
+>```virtualenv myprojectenv```
+
+This will create a directory called myprojectenv within your myproject directory. Inside, it will install a local version of Python and a local version of pip. We can use this to install and configure an isolated Python environment for our project.
+
+Before we install our project’s Python requirements, we need to activate the virtual environment. You can do that by typing:
+>```source myprojectenv/bin/activate```
+
+With your virtual environment active, install Django, Gunicorn, and the psycopg2 PostgreSQL adaptor with the local instance of pip:
+>```pip install django gunicorn psycopg2```
+
+Clone this repository
+
+
