@@ -7,4 +7,4 @@ I have used Django alongside Gunicorn and Nginx to create a secure WSGI gateway 
 I used the following steps to host the webserver on my local machine:
 
 First we  check if our system is up to date :
-> sudo apt-get update
+> ```sudo apt-get update```
