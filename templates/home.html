@@ -7,7 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    {%csrf_token%}
-    {{name.data}}    
+ 
+    <div>
+        {{name}}
+    </div>
+    <div>
+        <form action="update" method="get">
+            {%csrf_token%}
+            Enter employee name : <input type="text" name="empname"><br>
+            Enter employee salary : <input type="text" name="empsal"><br>
+            Enter employee age : <input type="text" name="empage"><br>
+            <input type="submit">
+        </form>
+        {{temp}}
+    </div>
+
 </body>
 </html>
